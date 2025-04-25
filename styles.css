@@ -14,7 +14,11 @@
 body {
     height: 100vh;
     font-family: 'Be Vietnam Pro', sans-serif;
-    margin: 0 12px;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 25px;
 }
 
 .headline {
@@ -35,6 +39,9 @@ p {
     font-size: 1rem;
     color: var(--text-color);
     font-weight: 400;
+}
+
+.bento p {
     margin-bottom: 32px;
 }
 
