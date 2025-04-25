@@ -65,6 +65,8 @@ p {
     border-radius: 16px;
     margin: 24px 24px 0 24px;
     padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .box:last-child {
@@ -74,4 +76,87 @@ p {
 
 .bento-image {
     width: 100%;
+    
+}
+
+
+@media screen and (min-width: 700px) {
+    .header {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 40px;
+    }
+
+    h2 {
+        margin: 0 0 12px 0;
+    }
+    .bento-image {
+        max-width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    /*BENTO SPACING*/
+
+    /* OUTER LAYER */
+    .bento {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+        gap: 24px;
+    }
+    /*ALL BOXES*/
+    .box {
+        margin: 0;
+        padding: 32px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img" 
+        "text";
+    }
+
+    /*ODD FLIP*/
+    .box:first-child {
+        grid-template-areas: 
+        "text" 
+        "img";
+    }
+
+    /*BOX 1, 2*/
+    .one, .two {
+        grid-column: span 1;
+    }
+
+    /*BOX 3-5*/
+    .three, .five {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 66% 34%;
+        grid-template-areas: 
+            "text img";
+        align-items: center;
+        gap: 16px;
+    }
+
+    .four {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 34% 66%;
+        grid-template-areas: 
+            "img text";
+        align-items: center;
+        gap: 16px;
+    }
+
+    .bento-text {
+        grid-area: text;
+    }
+
+    .bento-image {
+        grid-area: img;
+    }
 }
