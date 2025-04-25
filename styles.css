@@ -179,7 +179,7 @@ p {
     .four, .five {
         grid-column: span 3;
         grid-template-areas: "text img";
-        grid-template-columns: 66% 34%;
+        grid-template-columns: 50% 50%;
     }
 
     .bento-text {
