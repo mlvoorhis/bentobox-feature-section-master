@@ -12,9 +12,9 @@
 }
 
 body {
-    height: 100vh;
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 0 10px;
+    padding-bottom: 64px;
 }
 
 .logo {
@@ -41,9 +41,6 @@ p {
     font-weight: 400;
 }
 
-.bento p {
-    margin-bottom: 32px;
-}
 
 .header {
     display: flex;
@@ -56,22 +53,25 @@ p {
 
 .bento {
     background-color: var(--container-color);
-    border-radius: 8px;
+    border-radius: 16px;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
 .box {
     background-color: var(--background-color);
     box-shadow: 0 1px 1px var(--text-color);
-    border-radius: 8px;
-    margin: 24px;
+    border-radius: 16px;
+    margin: 24px 24px 0 24px;
     padding: 24px;
 }
 
-.bento-image {
-    width: 100%;
+.box:last-child {
+    margin-bottom: 24px;
 }
 
-.box:last-child {
-    margin-bottom: 60px;
+
+.bento-image {
+    width: 100%;
 }
