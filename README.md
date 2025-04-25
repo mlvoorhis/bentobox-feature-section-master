@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name} | devChallenges</h1>
+<h1 align="center">Bento Box Layout | devChallenges</h1>
 
 <div align="center">
    Solution for a challenge <a href="https://devchallenges.io/challenge/bento-box-layout-challenge" target="_blank">Bento Box Layout Feature Section</a> from <a href="http://devchallenges.io" target="_blank">devChallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="{https://your-demo-link.your-domain}">
+    <a href="https://mlvoorhis.github.io/bentobox-feature-section-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="{https://your-url-to-the-solution}">
+    <a href="https://github.com/mlvoorhis/bentobox-feature-section-master">
       Solution
     </a>
     <span> | </span>
@@ -32,13 +32,12 @@
 - [Built with](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/challenges/68/challenge-68-thumbnail)
 
 <!--
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
@@ -48,39 +47,28 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 -->
 
 ### What I learned
+<b>Nested Grids</b>:
+This project gave me a lot of hands-on experience with nested grids,  using <code>grid-template-areas</code>, <code>grid-column</code>, <code>grid-template-columns</code>, and <code>grid-template-rows</code>. I learned how tricky it can be to manage the layout, especially when flipping the order of box items. Managing these nested grids for different box configurations (like switching between 75%/25% and 25%/75% columns) added unnecessary complexity to the project, making it harder to maintain.
 
-<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge. -->
+<b>Flexbox</b>:
+While I initially tried using <code>display: flex</code> and <code>flex-direction: column-reverse | row-reverse</code>, I abandoned my efforts, because I thought I wouldn't be able to lay them out unevenly (e.g. 60/40). I was wrong! <code>flex-basis</code> would've given be the effect I wanted without the headache. At least I got some valuable experience with some tricky nested grids.
+
+<b>Padding & Gap for Consistent Spacing</b>:
+When I used <code>margin</code> for the individual box spacing, I was having issues with the margins doubling up. I realized a simpler approach was to add <code>padding</code> for the outside lines and <code>gap</code> for the inside lines. 
 
 ### Useful resources
-
-<!--
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
--->
+- [Free Code Camp](https//www.FreeCodeCamp.org) - My foundation in HTML/CSS
+- [W3Schools](https://www.w3schools.com/cssref/pr_grid.php) - Where I spent a bunch of time troubleshooting grid layouts.
 
 ### Built with
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
 
 ## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges-dashboard) challenge.
 
-## Acknowledgements
+## Contact
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
-
-## Author
-
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
+- GitHub [@mlvoorhis](https://github.com/mlvoorhis)
