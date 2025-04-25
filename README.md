@@ -39,12 +39,7 @@
 
 ![screenshot](https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/challenges/68/challenge-68-thumbnail)
 
-<!--
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- What have you learned/improved?
-- Your wisdom? :)
--->
+This project provided valuable hands-on experience with CSS Grid, especially when working with nested grids and adjusting layouts based on different configurations like 75%/25% or 25%/75%. I initially struggled with layout techniques, but learned that Flexbox's flex-basis could’ve simplified things, sparing me the complexity of nested grids. I also discovered the power of using padding and gap for consistent spacing, avoiding margin issues like doubling up.
 
 ### What I learned
 <b>Nested Grids</b>:
